@@ -1,0 +1,16 @@
+name: push_workflow
+on:  
+    push:
+        branches: 
+            - main
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print greetings
+              run: echo "Hello world"
+            - name: Print Good Bye
+              run:  
+                echo "This is my push workflow"  
+                echo "push workflow executed successfully"
+              
