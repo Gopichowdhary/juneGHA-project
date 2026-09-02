@@ -1,0 +1,12 @@
+name: First_GHAWorkflow
+on: workflow_dispatch
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print greetings
+              run: echo "Hello world"
+            - name: Print Good Bye
+              run: 
+                echo "this is my first GHA"
+                echo "workflow executed successfully"
