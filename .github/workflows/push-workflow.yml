@@ -8,9 +8,10 @@ on:
         branches:
             - main
             - dev
+            - release-*
     workflow_dispatch:
-    schedule:
-        - cron : '0 9 * * *'
+    # schedule:
+    #     - cron : '0 9 * * *'
 
 jobs:
     first-job:
